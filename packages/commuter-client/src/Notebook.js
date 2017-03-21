@@ -18,6 +18,7 @@ import { styles } from "./stylesheets/commuter";
 
 class Notebook extends React.Component {
   componentDidMount() {
+    console.log(this.props);
     this.loadData(this.props);
   }
 

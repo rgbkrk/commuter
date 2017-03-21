@@ -20,8 +20,8 @@ ReactDOM.render(
       <Route path="/" component={App}>
         <IndexRoute component={Commuter} />
         <Route path="/discover" component={Discovery} />
-        <Route path="*.ipynb" component={Notebook} />
-        <Route path="*" component={Commuter} />
+        <Route path="/view/**/*.ipynb" component={Notebook} />
+        <Route path="/view/**" component={Commuter} />
       </Route>
     </Router>
   </Provider>,

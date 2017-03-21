@@ -14,6 +14,7 @@ import { styles } from "./stylesheets/commuter";
 class Commuter extends React.Component {
   static contextTypes = { router: T.object.isRequired };
   componentDidMount() {
+    console.log(this.props);
     this.loadData(this.props);
   }
 
