@@ -11,6 +11,11 @@ const Body = (props: BodyProps) => {
       <div className="main-container">
         {props.children}
       </div>
+      <style jsx>{`
+        .main-container {
+          margin-left: 2rem;
+        }
+      `}</style>
     </div>
   );
 };

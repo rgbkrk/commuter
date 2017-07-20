@@ -19,10 +19,11 @@ class MyDocument extends Document {
     return (
       <html lang="en-US">
         <Head>
-          <link
+          {/*<link
             rel="stylesheet"
             href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css"
-          />
+          />*/}
+
           <link rel="stylesheet" type="text/css" href="/static/nprogress.css" />
 
           <link
@@ -63,7 +64,19 @@ class MyDocument extends Document {
             rel="stylesheet"
             type="text/css"
           />
+
+          {/*
           <link rel="stylesheet" type="text/css" href="/static/commuter.css" />
+          */}
+
+          <link rel="stylesheet" type="text/css" href="/static/normalize.css" />
+
+          <style>{`body {
+            margin: 0;
+            font-family: "Source Sans Pro", -apple-system, system-ui, BlinkMacSystemFont,
+              "Segoe UI", Roboto, "Lato", Helvetica, Arial, sans-serif;
+            font-size: 1em;
+          }`}</style>
 
           <script src="https://cdn.plot.ly/plotly-latest.min.js" />
         </Head>

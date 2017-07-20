@@ -93,6 +93,7 @@ class CommuterMenu extends React.Component {
             display: table;
             padding: 1em;
             color: ${theme.primary};
+            text-decoration: none;
           }
 
           ul li.active a {
@@ -102,7 +103,7 @@ class CommuterMenu extends React.Component {
             cursor: default;
           }
 
-          a:hover {
+          ul li a:hover {
             text-decoration: underline;
           }
 

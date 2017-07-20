@@ -1,6 +1,5 @@
 // @flow
 import React from "react";
-import Link from "next/link";
 require("isomorphic-fetch");
 
 import { join as pathJoin } from "path";

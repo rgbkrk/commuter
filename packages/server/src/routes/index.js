@@ -26,6 +26,9 @@ function createRouter(config): express.Router {
       discoveryProvider = require("../discovery-providers/elasticsearch");
       break;
     // Otherwise, we provide a dummy router for now
+    case "mock":
+      discoveryProvider = require("../discovery-providers/mock");
+      break;
     default:
       discoveryProvider = require("../discovery-providers/none");
   }
